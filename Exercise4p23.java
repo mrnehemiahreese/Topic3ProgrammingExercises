@@ -19,7 +19,18 @@ public class Exercise4p23 {
 		
 		
 		
-		
+		double grossPay, federal, state, totalDeduction;
+		System.out.printf(
+			"Employee Name: " + name + 
+			"\nHours Worked: " + hours +
+			"\nPay Rate: $" + payrate +
+			"\nGross Pay: $" + (grossPay = hours * payrate) +
+			"\nDeductions:\n   Federal Witholding (20.0%): $" +
+			(federal = grossPay * fedtax) +
+			"\n   State Witholding (9.0%): $" + (state = grossPay * statetax) +
+			"\n   Total Deduction: $" + (totalDeduction = federal + state) +
+			"\nNet Pay: $" + (grossPay - totalDeduction)
+			);
+	}
 		 
 	}
-}
